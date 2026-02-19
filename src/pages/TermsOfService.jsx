@@ -116,7 +116,7 @@ export default function TermsOfService() {
             <p className="mt-2 text-sm leading-6 text-rose-700">
               These Terms are governed by the laws of India. Any disputes shall
               be subject to the jurisdiction of{" "}
-              <span className="font-semibold">[Your City/State]</span>.
+              <span className="font-semibold">your city/state</span>.
             </p>
           </section>
 
@@ -124,7 +124,7 @@ export default function TermsOfService() {
             <h2 className="text-sm font-bold text-rose-950">Contact</h2>
             <p className="mt-2 text-sm leading-6 text-rose-700">
               For questions, email{" "}
-              <span className="font-semibold">[support@email.com]</span>.
+              <span className="font-semibold">support@pecifycollections.com</span>.
             </p>
           </section>
         </div>

@@ -104,7 +104,7 @@ export default function ShippingPolicy() {
             <h2 className="text-sm font-bold text-rose-950">Contact</h2>
             <p className="mt-2 text-sm leading-6 text-rose-700">
               Questions about shipping? Email us at{" "}
-              <span className="font-semibold">[support@email.com]</span>.
+              <span className="font-semibold">support@pecifycollections.com</span>.
             </p>
           </section>
         </div>

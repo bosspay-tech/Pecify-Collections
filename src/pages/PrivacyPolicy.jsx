@@ -106,7 +106,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-sm font-bold text-rose-950">Contact</h2>
             <p className="mt-2 text-sm leading-6 text-rose-700">
               If you have questions about this policy, contact{" "}
-              <span className="font-semibold">[support@email.com]</span>.
+              <span className="font-semibold">support@pecifycollections.com</span>.
             </p>
           </section>
         </div>

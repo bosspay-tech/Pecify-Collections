@@ -123,7 +123,7 @@ export default function Footer() {
                     Customer care
                   </div>
                   <div className="mt-1 text-xs text-rose-700">
-                    Email: support@yourstore.com
+                    Email: support@pecifycollections.com
                   </div>
                   <div className="mt-1 text-xs text-rose-700">
                     Hours: Mon–Sat • 10am–6pm

@@ -58,7 +58,7 @@ export default function ReturnsRefunds() {
             <ol className="mt-2 list-decimal space-y-2 pl-5 text-sm leading-6 text-rose-700">
               <li>
                 Contact support at{" "}
-                <span className="font-semibold">[support@email.com]</span> with
+                <span className="font-semibold">support@pecifycollections.com</span> with
                 your order ID.
               </li>
               <li>Share images if the product is damaged/incorrect.</li>
@@ -104,7 +104,7 @@ export default function ReturnsRefunds() {
             <h2 className="text-sm font-bold text-rose-950">Contact</h2>
             <p className="mt-2 text-sm leading-6 text-rose-700">
               For any questions, reach us at{" "}
-              <span className="font-semibold">[support@email.com]</span>.
+              <span className="font-semibold">support@pecifycollections.com</span>.
             </p>
           </section>
         </div>
