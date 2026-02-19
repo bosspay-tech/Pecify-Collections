@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 
 function ProductCard({ product, onViewDetails }) {
-  const [isImageValid, setIsImageValid] = useState(true);
-  if (!isImageValid || !product?.image_url) {
-    return null;
-  }
   const price = Number(product?.base_price ?? 0);
   const mrp = Number(product?.mrp ?? 0);
   const hasDiscount = mrp > price;
@@ -18,8 +14,7 @@ function ProductCard({ product, onViewDetails }) {
       <div className="relative aspect-4/5 overflow-hidden bg-slate-100">
         <img
           src={product.image_url}
-          alt={product.title}
-          onError={() => setIsImageValid(false)}
+          alt={product.title}          
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
 
