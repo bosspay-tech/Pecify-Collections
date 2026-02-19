@@ -4,153 +4,212 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-12 border-t border-slate-200 bg-white">
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+    <footer className="mt-14 border-t border-rose-200 bg-white">
+      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         {/* Top */}
-        <div className="grid gap-10 md:grid-cols-4">
+        <div className="grid gap-10 lg:grid-cols-12">
           {/* Brand */}
-          <div className="md:col-span-1">
+          <div className="lg:col-span-4">
             <Link
               to="/"
-              className="inline-flex items-center gap-2 rounded-xl px-2 py-1 font-bold tracking-tight text-slate-900 hover:bg-slate-100"
+              className="inline-flex items-center gap-3 rounded-2xl px-2 py-1 font-extrabold tracking-tight text-rose-950 hover:bg-rose-50"
               aria-label="Go to homepage"
             >
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-white">
+              <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-rose-950 text-white shadow-sm">
                 S
               </span>
-              <span className="text-lg">Store</span>
+              <div className="leading-tight">
+                <div className="text-lg">Store</div>
+                <div className="text-xs font-semibold text-rose-600">
+                  Fashion essentials • Everyday premium
+                </div>
+              </div>
             </Link>
 
-            <p className="mt-3 text-sm text-slate-600">
-              Premium products, simple checkout, fast support.
+            <p className="mt-4 max-w-sm text-sm leading-6 text-rose-700">
+              Premium styles, simple checkout, and fast support. Designed for a
+              modern wardrobe — clean silhouettes, comfortable fits.
             </p>
 
-            <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
-              <span className="rounded-full bg-slate-100 px-3 py-1">
-                🔒 Secure
+            {/* Trust badges */}
+            <div className="mt-5 flex flex-wrap gap-2 text-xs text-rose-700">
+              <span className="rounded-full border border-rose-200 bg-rose-50 px-3 py-1">
+                🔒 Secure payments
               </span>
-              <span className="rounded-full bg-slate-100 px-3 py-1">
+              <span className="rounded-full border border-rose-200 bg-rose-50 px-3 py-1">
                 🚚 Fast shipping
               </span>
-              <span className="rounded-full bg-slate-100 px-3 py-1">
+              <span className="rounded-full border border-rose-200 bg-rose-50 px-3 py-1">
                 ↩️ Easy returns
               </span>
             </div>
+
+            {/* Newsletter (optional) */}
+            <div className="mt-6 rounded-3xl border border-rose-200 bg-linear-to-b from-rose-50 to-white p-4">
+              <div className="text-sm font-semibold text-rose-950">
+                Get style drops & offers
+              </div>
+              <div className="mt-3 flex gap-2">
+                <input
+                  placeholder="Enter your email"
+                  className="w-full rounded-2xl border border-rose-200 bg-white px-4 py-2.5 text-sm text-rose-950 outline-none transition focus:border-pink-400 focus:ring-4 focus:ring-pink-100"
+                />
+                <button className="shrink-0 rounded-2xl bg-rose-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-rose-900 focus:outline-none focus:ring-4 focus:ring-rose-200">
+                  Join
+                </button>
+              </div>
+              <p className="mt-2 text-xs text-rose-600">
+                No spam. Unsubscribe anytime.
+              </p>
+            </div>
           </div>
 
-          {/* Links */}
-          <div className="grid grid-cols-2 gap-8 md:col-span-3 md:grid-cols-3">
-            <div>
-              <h4 className="text-sm font-semibold text-slate-900">Shop</h4>
-              <ul className="mt-3 space-y-2 text-sm">
-                <li>
-                  <Link className="text-slate-600 hover:text-slate-900" to="/">
-                    All Products
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="text-slate-600 hover:text-slate-900"
-                    to="/cart"
-                  >
-                    Cart
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="text-slate-600 hover:text-slate-900"
-                    to="/orders"
-                  >
-                    Orders
-                  </Link>
-                </li>
-              </ul>
+          {/* Link Columns */}
+          <div className="lg:col-span-8">
+            <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
+              <div>
+                <h4 className="text-sm font-bold text-rose-950">Shop</h4>
+                <ul className="mt-4 space-y-2.5 text-sm">
+                  <li>
+                    <Link
+                      className="text-rose-700 hover:text-rose-950"
+                      to="/products"
+                    >
+                      All Products
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="text-rose-700 hover:text-rose-950"
+                      to="/cart"
+                    >
+                      Cart
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="text-rose-700 hover:text-rose-950"
+                      to="/orders"
+                    >
+                      Orders
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-bold text-rose-950">Support</h4>
+                <ul className="mt-4 space-y-2.5 text-sm">
+                  <li>
+                    <Link
+                      className="text-rose-700 hover:text-rose-950"
+                      to="/shipping"
+                    >
+                      Shipping Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="text-rose-700 hover:text-rose-950"
+                      to="/returns-refunds"
+                    >
+                      Returns & Refunds
+                    </Link>
+                  </li>
+                </ul>
+
+                <div className="mt-5 rounded-2xl border border-rose-200 bg-rose-50 p-4">
+                  <div className="text-xs font-semibold text-rose-950">
+                    Customer care
+                  </div>
+                  <div className="mt-1 text-xs text-rose-700">
+                    Email: support@yourstore.com
+                  </div>
+                  <div className="mt-1 text-xs text-rose-700">
+                    Hours: Mon–Sat • 10am–6pm
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-bold text-rose-950">Company</h4>
+                <ul className="mt-4 space-y-2.5 text-sm">
+                  <li>
+                    <Link
+                      className="text-rose-700 hover:text-rose-950"
+                      to="/privacy-policy"
+                    >
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="text-rose-700 hover:text-rose-950"
+                      to="/terms-of-service"
+                    >
+                      Terms of Service
+                    </Link>
+                  </li>
+                </ul>
+
+                <div className="mt-5 flex flex-wrap gap-2 text-xs">
+                  <span className="rounded-full border border-rose-200 bg-white px-3 py-1 text-rose-700">
+                    ✨ New arrivals weekly
+                  </span>
+                  <span className="rounded-full border border-rose-200 bg-white px-3 py-1 text-rose-700">
+                    ✅ Quality checked
+                  </span>
+                </div>
+              </div>
             </div>
 
-            <div>
-              <h4 className="text-sm font-semibold text-slate-900">Support</h4>
-              <ul className="mt-3 space-y-2 text-sm">
-                <li>
-                  <Link
-                    className="text-slate-600 hover:text-slate-900"
-                    to="/help"
-                  >
-                    Help Center
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="text-slate-600 hover:text-slate-900"
-                    to="/shipping"
-                  >
-                    Shipping
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="text-slate-600 hover:text-slate-900"
-                    to="/returns"
-                  >
-                    Returns & Refunds
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-sm font-semibold text-slate-900">Company</h4>
-              <ul className="mt-3 space-y-2 text-sm">
-                <li>
-                  <Link
-                    className="text-slate-600 hover:text-slate-900"
-                    to="/about"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="text-slate-600 hover:text-slate-900"
-                    to="/privacy"
-                  >
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="text-slate-600 hover:text-slate-900"
-                    to="/terms"
-                  >
-                    Terms of Service
-                  </Link>
-                </li>
-              </ul>
+            {/* Mini bar */}
+            <div className="mt-10 grid gap-3 sm:grid-cols-3">
+              {[
+                { t: "Free shipping", d: "On orders above ₹999" },
+                { t: "Easy returns", d: "7-day return window" },
+                { t: "Secure checkout", d: "UPI / Cards / Wallets" },
+              ].map((x) => (
+                <div
+                  key={x.t}
+                  className="rounded-2xl border border-rose-200 bg-white p-4"
+                >
+                  <div className="text-sm font-semibold text-rose-950">
+                    {x.t}
+                  </div>
+                  <div className="mt-1 text-xs text-rose-600">{x.d}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="mt-8 flex flex-col gap-3 border-t border-slate-200 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-slate-500">
+        <div className="mt-10 flex flex-col gap-4 border-t border-rose-200 pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs text-rose-600">
             © {year} Store. All rights reserved.
           </p>
 
-          <div className="flex flex-wrap items-center gap-3 text-xs text-slate-600">
-            <Link className="hover:text-slate-900" to="/privacy">
+          <div className="flex flex-wrap items-center gap-3 text-xs text-rose-700">
+            <Link className="hover:text-rose-950" to="/privacy-policy">
               Privacy
             </Link>
-            <span className="text-slate-300">•</span>
-            <Link className="hover:text-slate-900" to="/terms">
+            <span className="text-rose-200">•</span>
+            <Link className="hover:text-rose-950" to="/terms-of-service">
               Terms
             </Link>
-            <span className="text-slate-300">•</span>
-            <Link className="hover:text-slate-900" to="/returns">
+            <span className="text-rose-200">•</span>
+            <Link className="hover:text-rose-950" to="/returns-refunds">
               Returns
+            </Link>
+            <span className="text-rose-200">•</span>
+            <Link className="hover:text-rose-950" to="/shipping">
+              Shipping
             </Link>
           </div>
 
-          <div className="flex items-center gap-2 text-xs text-slate-500">
-            <span className="rounded-full bg-slate-100 px-3 py-1">
+          <div className="flex items-center gap-2 text-xs text-rose-700">
+            <span className="rounded-full border border-rose-200 bg-rose-50 px-3 py-1">
               Visa / Mastercard / UPI
             </span>
           </div>
