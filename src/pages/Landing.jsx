@@ -7,16 +7,16 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const HERO_BANNERS = [
-  "https://media.istockphoto.com/id/1217052788/photo/confident-lady-in-white-t-shirt-in-jeans-with-denim-jacket-posing-on-camera-in-blue-lighting.webp?a=1&b=1&s=612x612&w=0&k=20&c=Szh84rozNwGl8ZBaBDecjo2DM4X3yF25-e6AJwQ5zkI=",
-  "https://media.istockphoto.com/id/652225388/photo/fashion-collection-woman-clothing.webp?a=1&b=1&s=612x612&w=0&k=20&c=Q7Yrrl-wL-xdFtDQ4p0c_C_FBT5RYCoaYU5E0RevYoQ=",
   "https://luxeria.in/wp-content/uploads/2026/01/Pink-Beauty-and-Feminine-Fashion-Boutique-Discount-Promotion-Banner-scaled.png",
+  "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 ];
 
 const COLLECTION_IMAGES = {
   bestseller:
     "https://t4.ftcdn.net/jpg/15/77/98/65/360_F_1577986576_30ZvE8e9cQINoaK3H2NFhctCxwWGJXiV.jpg",
   "new-arrival":
-    "https://media.istockphoto.com/id/1366258243/vector/vector-illustration-new-arrival-label-modern-web-banner-on-yellow-background.jpg",
+    "https://media.istockphoto.com/id/2007737872/vector/new-arrival-banner-template-on-the-abstract-pop-art-sunburst-background-vector-illustration.jpg?s=612x612&w=0&k=20&c=K_Mtb8Z4qk6RpYqR2fYK6y9Aw89Ojfxu15fTCRaZhHY=",
   "value-deal":
     "https://img.freepik.com/free-vector/modern-amazing-deals-discount-offer-background-design_1017-61362.jpg",
 };
