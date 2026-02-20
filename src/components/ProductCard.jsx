@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { getProxiedImage } from "../lib/imageproxy";
 
 function ProductCard({ product, onViewDetails }) {
   const price = Number(product?.base_price ?? 0);
@@ -13,7 +14,7 @@ function ProductCard({ product, onViewDetails }) {
       {/* Image Container */}
       <div className="relative aspect-4/5 overflow-hidden bg-slate-100">
         <img
-          src={product.image_url}
+          src={getProxiedImage(product.image_url)}
           alt={product.title}          
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
         />

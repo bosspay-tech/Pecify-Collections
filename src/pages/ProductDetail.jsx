@@ -4,6 +4,7 @@ import { supabase } from "../lib/supabase";
 import { STORE_ID } from "../config/store";
 import { useCartStore } from "../store/cart.store";
 import toast from "react-hot-toast";
+import { getProxiedImage } from "../lib/imageproxy";
 
 /* ---------- SKELETON ---------- */
 function SkeletonDetail() {
@@ -227,7 +228,7 @@ export default function ProductDetail() {
               <div className="relative bg-rose-50">
                 <div className="group relative aspect-4/5 overflow-hidden">
                   <img
-                    src={product.image_url}
+                    src={getProxiedImage(product.image_url)}
                     alt={product.title}
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.06]"
                     loading="lazy"
