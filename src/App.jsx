@@ -17,6 +17,7 @@ import { ProtectedRoute } from "./components/ProtectedRotue";
 import MyOrders from "./pages/MyOrders";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "./components/ScrollToTop";
+import Contact from "./pages/Contact";
 const App = () => {
   return (
     <Router>
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/returns-refunds" element={<ReturnsRefunds />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/contact" element={<Contact />} />
         <Route
           path="/orders"
           element={

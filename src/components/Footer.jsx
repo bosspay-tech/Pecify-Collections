@@ -150,6 +150,14 @@ export default function Footer() {
                       Terms of Service
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      className="text-rose-700 hover:text-rose-950"
+                      to="/contact"
+                    >
+                      Contact
+                    </Link>
+                  </li>
                 </ul>
 
                 <div className="mt-5 flex flex-wrap gap-2 text-xs">
