@@ -46,6 +46,28 @@ export default function Contact() {
                   +91 7048179839
                 </a>
               </div>
+              <div>
+                <div className="text-xs font-semibold text-rose-600">
+                  GST
+                </div>
+                <a
+                  href="tel:+917048179839"
+                  className="mt-1 inline-flex items-center gap-2 font-semibold text-rose-950 hover:text-rose-800"
+                >
+                  24AAPCP8032R1ZN
+                </a>
+              </div>
+              <div>
+                <div className="text-xs font-semibold text-rose-600">
+                  CIN
+                </div>
+                <a
+                  href="tel:+917048179839"
+                  className="mt-1 inline-flex items-center gap-2 font-semibold text-rose-950 hover:text-rose-800"
+                >
+                  U26303GJ2025PTC163198
+                </a>
+              </div>
             </div>
 
             {/* Quick actions */}
@@ -55,16 +77,6 @@ export default function Contact() {
                 className="inline-flex w-full items-center justify-center rounded-2xl bg-pink-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-pink-400 focus:outline-none focus:ring-4 focus:ring-pink-200"
               >
                 Call Now
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                  "4th Floor,434, Shiven Square, Pal Road, opp swsthik party plot, Adajan, Surat, Gujarat 395009",
-                )}`}
-                className="inline-flex w-full items-center justify-center rounded-2xl border border-rose-200 bg-white px-5 py-3 text-sm font-semibold text-rose-700 transition hover:bg-rose-50 focus:outline-none focus:ring-4 focus:ring-rose-100"
-              >
-                Open in Maps
               </a>
             </div>
           </div>

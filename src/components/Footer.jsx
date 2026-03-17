@@ -15,11 +15,8 @@ export default function Footer() {
               className="inline-flex items-center gap-3 rounded-2xl px-2 py-1 font-extrabold tracking-tight text-rose-950 hover:bg-rose-50"
               aria-label="Go to homepage"
             >
-              <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-rose-950 text-white shadow-sm">
-                S
-              </span>
               <div className="leading-tight">
-                <div className="text-lg">Store</div>
+                <div className="text-lg">Pecify Collections</div>
                 <div className="text-xs font-semibold text-rose-600">
                   Fashion essentials • Everyday premium
                 </div>
@@ -30,6 +27,33 @@ export default function Footer() {
               Premium styles, simple checkout, and fast support. Designed for a
               modern wardrobe — clean silhouettes, comfortable fits.
             </p>
+            <div className="mt-5 rounded-2xl border text-rose-700 border-white/10 bg-rose-100 p-4 backdrop-blur">
+              <div className="text-xs font-semibold">
+                Registered Office
+              </div>
+
+              <div className="mt-2 text-xs text-rose-700 leading-5">
+                PECIFY INFRA PAYMENT SOLUTION PRIVATE LIMITED
+                <br />
+                4th Floor, 434, Shiven Square,
+                <br />
+                Pal Road, Opp Swsthik Party Plot,
+                <br />
+                Adajan, Surat, Gujarat - 395009
+              </div>
+
+              <div className="mt-3 text-xs ">
+                📞 +91 7048179839
+              </div>
+
+              <div className="mt-2 text-xs ">
+                GST: 24AAPCP8032R1ZN
+              </div>
+
+              <div className="mt-1 text-xs ">
+                CIN: U26303GJ2025PTC163198
+              </div>
+            </div>
 
             {/* Trust badges */}
             <div className="mt-5 flex flex-wrap gap-2 text-xs text-rose-700">
