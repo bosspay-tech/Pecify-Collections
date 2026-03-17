@@ -18,39 +18,71 @@ export default function ReturnsRefunds() {
 
           <h1 className="mt-3 text-2xl font-extrabold tracking-tight text-rose-950 sm:text-3xl">
             Returns & Refund Policy
-          </h1>          
+          </h1>
         </div>
 
         <div className="mt-6 space-y-5 rounded-3xl border border-rose-200 bg-white p-6 shadow-sm">
+          {/* Return Window */}
           <section>
             <h2 className="text-sm font-bold text-rose-950">Return Window</h2>
             <p className="mt-2 text-sm leading-6 text-rose-700">
-              We offer returns within{" "}
-              <span className="font-semibold">7 days</span> of delivery
-              (example). Requests raised after the window may not be accepted.
+              Returns are accepted within{" "}
+              <span className="font-semibold">7 days</span> of delivery.
+              Requests raised after this window may not be accepted.
             </p>
           </section>
 
-          <section>
-            <h2 className="text-sm font-bold text-rose-950">Eligibility</h2>
-            <ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-6 text-rose-700">
-              <li>Item must be unused, unwashed, and in original condition.</li>
-              <li>Original tags/labels and packaging must be intact.</li>
-              <li>Return is subject to quality check upon pickup/receipt.</li>
-            </ul>
-          </section>
-
+          {/* Eligibility & Conditions */}
           <section>
             <h2 className="text-sm font-bold text-rose-950">
-              Non-Returnable Items
+              Eligibility & Conditions
             </h2>
             <ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-6 text-rose-700">
-              <li>Innerwear, masks, or items marked “Final Sale” (example).</li>
-              <li>Customized or altered products (if applicable).</li>
-              <li>Products damaged due to misuse or mishandling.</li>
+              <li>
+                Returns are only accepted if you received an incorrect item or
+                an item not listed on your bill due to our error.
+              </li>
+              <li>
+                We recommend recording a short video while opening your parcel
+                for proof in case of defective or incorrect items.
+              </li>
+              <li>
+                For branded items, returns are accepted only if original
+                packaging and all contents are intact.
+              </li>
+              <li>
+                Personalized products cannot be cancelled or returned once
+                processed.
+              </li>
+              <li>
+                A return authorization is mandatory before sending any product.
+                Unauthorized returns will be sent back to the customer.
+              </li>
             </ul>
           </section>
 
+          {/* Return Process */}
+          <section>
+            <h2 className="text-sm font-bold text-rose-950">Return Process</h2>
+            <ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-6 text-rose-700">
+              <li>Once approved, we will provide a return shipping label.</li>
+              <li>
+                You must securely pack the product with all original contents.
+              </li>
+              <li>
+                We strongly recommend using original packaging if available.
+              </li>
+              <li>
+                Record a video while packing your return item for verification.
+              </li>
+              <li>
+                Our team will also record an unboxing video upon receiving the
+                returned item.
+              </li>
+            </ul>
+          </section>
+
+          {/* How to Initiate */}
           <section>
             <h2 className="text-sm font-bold text-rose-950">
               How to Initiate a Return
@@ -58,10 +90,14 @@ export default function ReturnsRefunds() {
             <ol className="mt-2 list-decimal space-y-2 pl-5 text-sm leading-6 text-rose-700">
               <li>
                 Contact support at{" "}
-                <span className="font-semibold">support@pecifycollections.com</span> with
-                your order ID.
+                <span className="font-semibold">
+                  support@pecifycollections.com
+                </span>{" "}
+                with your order ID.
               </li>
-              <li>Share images if the product is damaged/incorrect.</li>
+              <li>
+                Share images/video if the product is damaged or incorrect.
+              </li>
               <li>
                 We will arrange pickup (subject to serviceability) or provide
                 return instructions.
@@ -69,42 +105,49 @@ export default function ReturnsRefunds() {
             </ol>
           </section>
 
+          {/* Exchange */}
           <section>
             <h2 className="text-sm font-bold text-rose-950">Exchange</h2>
             <p className="mt-2 text-sm leading-6 text-rose-700">
-              Exchanges are available for size issues (subject to stock). If the
-              requested size is unavailable, we will process a refund or store
-              credit as per your preference.
+              We will exchange your product for the same model (subject to
+              availability). If unavailable, a refund or store credit will be
+              provided.
             </p>
           </section>
 
+          {/* Refunds */}
           <section>
             <h2 className="text-sm font-bold text-rose-950">Refunds</h2>
             <p className="mt-2 text-sm leading-6 text-rose-700">
-              Once the returned item passes quality check, refunds are processed
-              within <span className="font-semibold">5–10 business days</span>{" "}
-              (example) to the original payment method. COD orders may be
-              refunded via bank transfer/UPI after verification.
+              Refunds are processed within{" "}
+              <span className="font-semibold">5–10 business days</span> after
+              the item passes quality check. Packaging and shipping charges are
+              non-refundable. COD refunds are processed via bank transfer/UPI
+              after verification.
             </p>
           </section>
 
+          {/* Damaged */}
           <section>
             <h2 className="text-sm font-bold text-rose-950">
               Damaged / Wrong Item
             </h2>
             <p className="mt-2 text-sm leading-6 text-rose-700">
-              If you receive a damaged or incorrect item, please contact us
-              within <span className="font-semibold">48 hours</span> of delivery
-              with unboxing images/video (if available). We will resolve it via
-              replacement or refund.
+              If you receive a damaged or incorrect item, contact us within{" "}
+              <span className="font-semibold">48 hours</span> with images or
+              unboxing video. We will resolve it via replacement or refund.
             </p>
           </section>
 
+          {/* Contact */}
           <section>
             <h2 className="text-sm font-bold text-rose-950">Contact</h2>
             <p className="mt-2 text-sm leading-6 text-rose-700">
               For any questions, reach us at{" "}
-              <span className="font-semibold">support@pecifycollections.com</span>.
+              <span className="font-semibold">
+                support@pecifycollections.com
+              </span>
+              .
             </p>
           </section>
         </div>
