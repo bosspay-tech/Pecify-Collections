@@ -80,6 +80,7 @@ export default function Signup() {
         setFormError(error.message || "Signup failed. Please try again.");
       } else {
         toast.success("Signup successful! Welcome.");
+        nav('/')
       }
     } catch (err) {
       setFormError("Something went wrong. Please try again.");

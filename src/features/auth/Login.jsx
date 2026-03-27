@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { signIn } from "./auth.service";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 function isValidEmail(email) {
   // Simple + practical email check (not overly strict)
@@ -8,7 +9,7 @@ function isValidEmail(email) {
 }
 
 export default function Login() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -37,10 +38,8 @@ export default function Login() {
     e.preventDefault();
     setFormError("");
 
-    // Mark as touched so errors show if user tries to submit immediately
     setTouched({ email: true, password: true });
 
-    // Final validation guard
     if (
       !email.trim() ||
       !isValidEmail(email) ||
@@ -48,16 +47,30 @@ export default function Login() {
       password.length < 6
     ) {
       setFormError("Please fix the errors below and try again.");
+      toast.error("Invalid form inputs"); // 🔔 toast
       return;
     }
 
     setLoading(true);
+
     try {
       const { error } = await signIn(email.trim(), password);
-      if (error)
-        setFormError(error.message || "Login failed. Please try again.");
+
+      if (error) {
+        const msg = error.message || "Login failed. Please try again.";
+        setFormError(msg);
+        toast.error(msg); // 🔔 error toast
+        return;
+      }
+
+      // ✅ SUCCESS
+      toast.success("Login successful 🎉");
+
+      // ✅ REDIRECT TO HOME
+      navigate("/");
     } catch (err) {
       setFormError("Something went wrong. Please try again.");
+      toast.error("Something went wrong");
     } finally {
       setLoading(false);
     }
