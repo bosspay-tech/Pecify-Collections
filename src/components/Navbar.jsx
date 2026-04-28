@@ -56,6 +56,7 @@ export default function Navbar() {
 
         {/* DESKTOP */}
         <div className="hidden items-center gap-2 md:flex">
+          <NavItem to="/about-us">About Us</NavItem>
           <NavItem to="/cart">
             <span className="flex items-center gap-2">
               Cart
@@ -123,6 +124,7 @@ export default function Navbar() {
       <div className={cx("md:hidden", open ? "block" : "hidden")}>
         <div className="mx-auto max-w-6xl border-t border-rose-200 bg-white px-4 py-3 sm:px-6">
           <div className="flex flex-col gap-1">
+            <NavItem to="/about-us">About Us</NavItem>
             {user ? (
               <>
                 <NavItem to="/orders">My Orders</NavItem>

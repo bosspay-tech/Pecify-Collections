@@ -51,7 +51,7 @@ export default function Footer() {
               </div>
 
               <div className="mt-1 text-xs ">
-                CIN: U26303GJ2025PTC163198
+                CIN: U14201GJ2025PTC163198
               </div>
             </div>
 
@@ -180,6 +180,14 @@ export default function Footer() {
                       to="/contact"
                     >
                       Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="text-rose-700 hover:text-rose-950"
+                      to="/about-us"
+                    >
+                      About Us
                     </Link>
                   </li>
                 </ul>

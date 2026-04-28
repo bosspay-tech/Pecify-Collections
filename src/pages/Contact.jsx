@@ -65,7 +65,7 @@ export default function Contact() {
                   href="tel:+917048179839"
                   className="mt-1 inline-flex items-center gap-2 font-semibold text-rose-950 hover:text-rose-800"
                 >
-                  U26303GJ2025PTC163198
+                  U14201GJ2025PTC163198
                 </a>
               </div>
             </div>
